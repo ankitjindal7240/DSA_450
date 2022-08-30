@@ -1,4 +1,4 @@
-s = "()())(a)"
+s = ")("
 def isParentheses(s):
     return s=="(" or s==")"
 def isValidString(s):
@@ -30,8 +30,10 @@ def removeParentheses(s):
         if level:
             continue
         for i in range(len(s)):
+            # print(i)
             if isParentheses(s[i]):
-                temp=s[:i] + s[i+1:]
+                temp=s[:i] + s[i+1:]     # special check of i+1
+                # print(temp)
                 if temp not in visited:
                     q.append(temp)
                     visited.add(temp)

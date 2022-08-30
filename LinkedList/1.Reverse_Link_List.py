@@ -34,65 +34,7 @@ if __name__ == "__main__":
     n3.next=n4
     n4.next=n5
     n5.next=n6
-    # l1=LinkList(n1)
-    # head=reverseLL(n1)
-    # print(head.value,head.next.value)
-
-# words = ["ab","ty","yt","lc","cl","ab"]
-# p=0
-# pairs=0
-# for i in range(len(words)):
-#     if words[i]==0:
-#         continue
-#     if words[i]==words[i][::-1]:
-#         p=1
-#         words[i]=0
-#     else:
-#         for j in range(i,len(words)):
-#             if words[j] == 0:
-#                 continue
-#             if words[i] == 0:
-#                 continue
-#             elif words[j]== words[i][::-1]:
-#                 pairs=pairs+1
-#                 words[i]=words[j]=0
-#
-# ans =4*pairs + 2*p
-
-grid = [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]
-stampHeight = 4
-stampWidth = 3
-for row in grid:
-    width = 0
-    for i  in range(len(row)):
-        if row[i]==1:
-            if width==0 or width>=stampWidth:
-                width=0
-            else:False
-        else:
-            width=width+1
-    if width == 0 or width >= stampWidth:
-        width = 0
-    else:
-        False
-
-
-
-for i  in range(len(grid[0])):
-    h = 0
-    for j  in grid:
-        if j[i]==1:
-            if h==0 or h>=stampHeight:
-                h=0
-            else:False
-        else:
-            h=h+1
-    if h == 0 or h >= stampHeight:
-        h = 0
-    else:
-        False
-
-
-
-
+    l1=LinkList(n1)
+    head=reverseLL(n1)
+    print(head.value,head.next.value)
 

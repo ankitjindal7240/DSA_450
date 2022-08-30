@@ -6,7 +6,8 @@ def bfs(root,graph):
     while queue:
         node=queue.pop(0)
         print(node)
-        visited[node]=1
+
         for neighbour in graph[node]:
             if visited[neighbour]!=1:
                 queue.append(neighbour)
+                visited[neighbour] = 1

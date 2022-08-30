@@ -5,6 +5,17 @@ matrix =    [[1, 2, 3, 4,25],
              [17,18,19,20,29],
             ]
 
+
+
+
+
+
+
+
+
+
+
+
 rows=len(matrix)-1
 coulms=len(matrix[0])-1
 no_of_rounds= (min(rows+1,coulms+1))//2 +(min(rows+1,coulms+1))%2

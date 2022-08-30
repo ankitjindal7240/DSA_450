@@ -1,0 +1,4 @@
+first leter of class name is capital
+
+every time object created init function must call
+
